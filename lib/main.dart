@@ -7,7 +7,7 @@ void main() => runApp(const MyApp());
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  static const String _title = 'Shopping!';
+  static const String _title = 'WikiMedia Infinite Scroll';
 
   @override
   Widget build(BuildContext context) {
@@ -44,7 +44,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('BottomNavigationBar Sample'),
+        title: const Text('WikiMedia Infinite Scroll'),
       ),
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),

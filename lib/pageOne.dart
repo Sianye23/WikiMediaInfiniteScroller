@@ -10,11 +10,13 @@ class PageOne extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(itemBuilder: (BuildContext context, int index) { return Card();});
+
+
   }
 
   Row Card() {
     String word = WordNoun.random().toString();
-    return Row(children: <Widget>[Text(word),
+    return Row(children: <Widget>[Text(word,style: TextStyle(fontSize: 25)),
       FutureBuilder<dynamic>(
           future: FindImage(word),
           builder: (context, snapshot) {
